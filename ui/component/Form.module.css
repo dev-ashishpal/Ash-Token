@@ -1,0 +1,52 @@
+.FormBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.Form {
+  width: 800px;
+  display: flex;
+  /* background-color: orangered; */
+}
+
+.Input {
+	height: 50px;
+	width: 100%;
+	/* background-color: orange; */
+	font-size: 18px;
+}
+
+
+.Input input {
+	width: 85%;
+	height: 100%;
+	border: none;
+	font: inherit;
+	border: 1px solid #eee;
+	box-shadow: 0 0px 5px 2px #ddd;
+	outline: none;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.Input input:focus {
+	border: none;
+}
+
+.Input button {
+	width: 15%;
+	height: 100%;
+	font: inherit;
+	text-decoration: none;
+	background: rgb(97, 97, 245);
+	box-shadow: 0 0px 6px rgb(97, 97, 245);
+	padding: 0;
+	cursor: pointer;
+	margin: 0;
+	border: none;
+	color: white;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
