@@ -1,13 +1,19 @@
+import React from 'react';
 import Heading from "../component/Heading";
 import Form from "../component/Form";
 import Progress from "../component/Progress";
-import Web3Init from "../Web3/web3";
-import { useEffect } from "react";
+import ashTokenSale from '../../eth/build/contracts/AshTokenSale.json';
+import { web3, web3Init, tokenSaleInstance, tokenInstance} from "../Web3/web3";
+// import web3 from '../Web3/web3';
+import {useEffect} from 'react';
+const Home = () => {
 
-export default function Home() {
   useEffect(() => {
-    Web3Init();
+    web3Init();
+    console.log('index web3', web3);
+    // console.log(await web3.eth.getAccounts());
   },[]);
+  
   return (
     <div className="center">
       <Heading>ash token ico sale</Heading>
@@ -23,4 +29,6 @@ export default function Home() {
       </p>
     </div>
   );
-}
+};
+
+export default Home;
